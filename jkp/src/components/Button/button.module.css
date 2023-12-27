@@ -1,0 +1,23 @@
+.btn {
+    color: var(--bg);
+    background-color: red;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 1.45em;
+    padding: .15rem 1.3rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px red;
+}
+
+.bg-black {
+    background-color: var(--bg);
+    box-shadow: 0 0 5px var(--bg);
+}
+
+.white {
+    color: var(--white);
+}
+
+.red {
+    color: var(--vermelho);
+}

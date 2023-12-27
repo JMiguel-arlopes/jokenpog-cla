@@ -1,0 +1,11 @@
+.containerVertical {
+    height: 320px;
+    background-color: red;
+    writing-mode: vertical-rl;
+    flex: 1;
+    /* position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    /* text-orientation: mixed; */
+}
