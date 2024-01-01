@@ -1,0 +1,21 @@
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: .75em;
+    margin: 0 5px;
+    border: var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.iconContainer:hover {
+    background-color: antiquewhite;
+}
+
+.iconContainer svg {
+    font-size: 24px;
+}

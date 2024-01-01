@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .center {
@@ -13,7 +14,14 @@
     justify-content: flex-start;
 }
 
+.end {
+    justify-content: flex-end;
+}
+
 .column {
     flex-direction: column;
-    justify-content: center;
+}
+
+.stretch {
+    align-items: stretch;
 }

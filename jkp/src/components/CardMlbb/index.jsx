@@ -1,10 +1,19 @@
 import Button from '../Button';
 import styles from './cardmlbb.module.css';
 import img_mlbb from '../../assets/lunox.jpg'
+import { useNavigate } from "react-router-dom";
 
 export default function CardMlbb() {
+
+
+    const navigate = useNavigate()
+    
+    const changeToMLBB = () => {
+        navigate("mlbb");
+    }
+
     return (
-        <div className={styles.card_mlbb}>
+        <div className={styles.card_mlbb} onClick={changeToMLBB}>
             <div className={styles.container_img}>
                 <img src={img_mlbb} alt='lunox'/>
             </div>

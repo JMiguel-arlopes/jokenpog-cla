@@ -35,6 +35,10 @@
             0px 0px 32px rgb(168, 0, 0);
 }
 
+.card_mlbb a {
+    text-decoration: none;
+}
+
 .container_img {
     flex: 1;
     width: 100%;
