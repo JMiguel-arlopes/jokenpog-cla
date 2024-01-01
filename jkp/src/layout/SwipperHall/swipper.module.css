@@ -1,0 +1,25 @@
+.container_swipper {
+    font-family: var(--fonte-secundaria);
+    background: linear-gradient(rgb(5, 0, 30), rgb(21, 13, 59));
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container_swipper>h2 {
+    color: #fff;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.content_slide {
+    width: 100%;
+}
+

@@ -1,0 +1,21 @@
+table {
+    background-color: #080808;
+    width: 100%;
+    padding-bottom: .5rem;
+}
+
+th,
+td {
+    border: 0;
+    margin: 0;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1px solid gray;
+}
+
+th:not(th:last-child),
+td:not(td:last-child) {
+    border-right: 1px solid gray;
+}

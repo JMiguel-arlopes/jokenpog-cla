@@ -1,0 +1,12 @@
+.container_extensions {
+    font-family: var(--fonte-secundaria);
+    padding: 3rem 2rem;
+    background: linear-gradient(rgb(21, 13, 59), rgb(5, 0, 30));
+}
+
+.container_extensions>h2{
+    color: white;
+    text-shadow: -2px 2px black;
+    font-size: 56px;
+    margin-bottom: 3rem;
+}
