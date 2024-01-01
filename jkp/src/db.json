@@ -1,0 +1,129 @@
+{
+    "members" : [
+        {
+            "name": "nosferatu",
+            "lane": "jungle",
+            "main": "ling",
+            "titles": 12,
+            "winRate": 55.7, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "gloria mitica",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 7
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 6
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 8
+                }
+            ]
+        },
+        {
+            "name": "maah",
+            "lane": "mid",
+            "main": "lilya",
+            "titles": 3,
+            "winRate": 51.6, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "gloria mitica",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 8
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 1
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 5
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 9
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 10
+                }
+            ]
+        },
+        {
+            "name": "kiyoshii",
+            "lane": "exp",
+            "main": "guinevere",
+            "titles": 4,
+            "winRate": 60.2, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "imortal",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 10
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 5
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 6
+                }
+            ]
+        },
+        {
+            "name": "Raposo",
+            "lane": "roaming",
+            "main": "Belerick",
+            "titles": 3,
+            "winRate": 54.2, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "mitico",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 5
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 3
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 7
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 1
+                }
+            ]
+        }
+        
+    ]
+}
