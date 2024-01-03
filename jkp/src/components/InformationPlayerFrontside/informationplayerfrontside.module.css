@@ -1,0 +1,73 @@
+.front {
+    width: 100%;
+}
+
+.container_presentation {
+    background: linear-gradient(#222, #080808);
+    padding: 0 1.25rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_presentation::before {
+    background: linear-gradient(transparent, #080808);
+    z-index: 20;
+}
+
+.container_presentation h2 {
+    font-family: 'KNIGHT WARRIOR', sans-serif;
+    font-family: 'Zombie Brush Personal Use', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2.1px;
+
+    z-index: 100;
+}
+
+.container_presentation .exp {
+    text-shadow: -1.2px 1.2px red;
+}
+
+.container_presentation .mid {
+    text-shadow: -2.4px 1.2px blue;
+}
+
+.container_presentation .gold {
+    text-shadow: -2px 1.2px gold;
+}
+
+.container_presentation .roaming {
+    text-shadow: -2px 1.2px orangered;
+}
+
+.container_presentation .jungle {
+    text-shadow: -2px 1.2px green;
+}
+
+.container_presentation img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 75%;
+    pointer-events: none;
+    max-height: 175px;
+    z-index: 10;
+    /* animation: fade-in .05s linear; */
+}
+
+.front p {
+    color: #555;
+    font-size: 6px;
+    background-color: #111;
+    text-align: center;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0}
+}

@@ -45,7 +45,6 @@
     background-color: #ccc;
     border-radius: 10px;
     position: relative;
-    /* border: 1px black solid; */
     overflow: hidden;
 }
 
@@ -56,7 +55,7 @@
     height: 100%;
     overflow: hidden;
     text-align: center;
-    animation: progress-bar 3s linear;
+    animation: progress-bar ease-out;
 }
 
 .progress_bar.exp {

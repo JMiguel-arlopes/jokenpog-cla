@@ -5,7 +5,7 @@ export default function ProgressBar(props) {
     const {lane, width} = props;
 
     const percentProgress = width * 10 + '%';
-    const timingProgress = width * 0.5 + 's';
+    const timingProgress = width * 0.55 + 's';
 
     const widthProgress = {
         width: percentProgress,
