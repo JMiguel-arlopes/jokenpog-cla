@@ -4,7 +4,10 @@
             "name": "nosferatu",
             "lane": "jungle",
             "main": "ling",
+            "category": "assassino",
+            "medal": 1,
             "titles": 12,
+            "matches": 100,
             "winRate": 55.7, 
             "about": "lorem ipsum pipipi popopo kiplin",
             "elo": "gloria mitica",
@@ -35,7 +38,10 @@
             "name": "maah",
             "lane": "mid",
             "main": "lilya",
+            "category": "mago",
+            "medal": 1,
             "titles": 3,
+            "matches": 100,
             "winRate": 51.6, 
             "about": "lorem ipsum pipipi popopo kiplin",
             "elo": "gloria mitica",
@@ -66,7 +72,10 @@
             "name": "kiyoshii",
             "lane": "exp",
             "main": "guinevere",
+            "category": "lutador",
+            "medal": 0,
             "titles": 4,
+            "matches": 100,
             "winRate": 60.2, 
             "about": "lorem ipsum pipipi popopo kiplin",
             "elo": "imortal",
@@ -97,7 +106,9 @@
             "name": "Raposo",
             "lane": "roaming",
             "main": "Belerick",
+            "category": "tank",
             "titles": 3,
+            "matches": 100,
             "winRate": 54.2, 
             "about": "lorem ipsum pipipi popopo kiplin",
             "elo": "mitico",
@@ -121,6 +132,176 @@
                 {
                     "nameLane": "jungle",
                     "proficiency": 1
+                }
+            ]
+        },
+        {
+            "name": "isa a main hanabi",
+            "lane": "gold",
+            "main": "Hanabi",
+            "category": "atirador",
+            "medal": 1,
+            "titles": 6,
+            "matches": 100,
+            "winRate": 60.4, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "mitico",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 8
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 3
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 2
+                }
+            ]
+        },
+        {
+            "name": "lost feather",
+            "lane": "mid",
+            "main": "Harith",
+            "category": "mago",
+            "medal": 0,
+            "titles": 6,
+            "matches": 100,
+            "winRate": 20.4, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "mitico",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 8
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 4
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 3
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 2
+                }
+            ]
+        },
+        {
+            "name": "bixcoito",
+            "lane": "gold",
+            "main": "Brody",
+            "category": "atirador",
+            "medal": 0,
+            "titles": 2,
+            "matches": 100,
+            "winRate": 10.2, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "gloria mitica",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 8
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 3
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 3
+                }
+            ]
+        },
+        {
+            "name": "Jaqalves",
+            "lane": "mid",
+            "main": "cecilion",
+            "category": "mago",
+            "medal": 0,
+            "titles": 4,
+            "matches": 100,
+            "winRate": 56.2, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "gloria mitica",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 1
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 9.8
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 3
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 0
+                }
+            ]
+        },
+        {
+            "name": "NoCry",
+            "lane": "jungle",
+            "main": "fanny",
+            "category": "assassino",
+            "medal": 0,
+            "titles": 4,
+            "matches": 100,
+            "winRate": 52.2, 
+            "about": "lorem ipsum pipipi popopo kiplin",
+            "elo": "gloria mitica",
+            "statistics": [
+                {
+                    "nameLane": "gold",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "exp",
+                    "proficiency": 1
+                },
+                {
+                    "nameLane": "mid",
+                    "proficiency": 2
+                },
+                {
+                    "nameLane": "roaming",
+                    "proficiency": 3
+                },
+                {
+                    "nameLane": "jungle",
+                    "proficiency": 8
                 }
             ]
         }
