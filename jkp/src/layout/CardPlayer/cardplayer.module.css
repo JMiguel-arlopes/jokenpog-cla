@@ -17,135 +17,72 @@
     text-align: start;
     flex-wrap: wrap;
     width: 400px;
-    background-color: red;
+    
     color: white;
     border-radius: 10px;
     border-top-left-radius: 10px;
     overflow: hidden;
+    animation: move-it 5s linear infinite;
+    margin: .5rem 0;
 }
 
-.front {
-    width: 100%;
+.card.exp {
+    background: repeating-linear-gradient(45deg,
+        #440000,
+        #aa0000 4%,
+        #ff0000 4%,
+        #080808 5%);
+    box-shadow: 0 0 6px red,
+        0 0 5px #FFF;
 }
 
-.information {
-    width: 100%;
-    z-index: 100;
-    padding: 0 1.25rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.card.mid {
+    background: repeating-linear-gradient(45deg,
+        #000044,
+        #0000aa 4%,
+        #0000ff 4%,
+        #080808 5%);
+    box-shadow: 0 0 6px blue,
+        0 0 5px #FFF;
 }
 
-.information h2 {
-    font-family: 'Zombie Brush Personal Use', sans-serif;
-    font-family: 'KNIGHT WARRIOR', sans-serif;
-    text-transform: uppercase;
-    font-size: 28px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-shadow: -1px 1px black;
+.card.gold {
+    background: repeating-linear-gradient(45deg,
+        rgb(75, 75, 0),
+        rgb(193, 179, 0) 4%,
+        goldenrod 4%,
+        #0e0c00 5%);
+    box-shadow: 0 0 6px gold,
+        0 0 5px #FFF;
 }
 
-
-.information h3 {
-    color: #adc9ff;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-    text-shadow: -1px 1px black;
+.card.roaming {
+    background: repeating-linear-gradient(45deg,
+        #6e3700,
+        #ce8032 4%,
+        #ff9b38 4%,
+        #080808 5%);
+    box-shadow: 0 0 6px #ff9b38, 0 0 5px #FFF;
 }
 
-.mid_card {
-    background: linear-gradient(#222, #080808);
-    padding: 0 1.25rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    width: 100%;
-    position: relative;
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mid_card::before {
-    background: linear-gradient(transparent, #080808);
-    z-index: 10;
-}
-
-.mid_card h2 {
-    font-family: 'KNIGHT WARRIOR', sans-serif;
-    font-family: 'Zombie Brush Personal Use', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 2.1px;
-    text-shadow: -1px 1px blue;
-    z-index: 100;
-}
-
-.mid_card img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    max-width: 70%;
-    pointer-events: none;
-    max-height: 180px;
-    z-index: 1;
-}
-
-.front p {
-    color: #555;
-    font-size: 6px;
-    background-color: #111;
-    text-align: center;
+.card.jungle {
+    background: repeating-linear-gradient(45deg,
+        #004400,
+        #00bf00 4%,
+        #00ff00 4%,
+        #080808 5%);
+    box-shadow: 
+        0 0 6px #00ff00,
+        0 0 5px #FFF;
 }
 
 
-.back {
-    background: #080808;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    /* padding: 1rem; */
-}
+@keyframes move-it {
+    0% {
+        background-position: initial;
+    }
 
-.img_back {
-    padding: 0 1rem;
-    position: relative;
-}
-
-/* .img_back::before {
-    background: linear-gradient(transparent, #080808);
-    
-} */
-
-.img_back img,
-.img_back h2 {
-    font-family: 'Zombie Brush Personal Use', sans-serif;
-    font-family: 'KNIGHT WARRIOR', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    padding-top: .5rem;
-    width: 100%;
-}
-
-.information_back {
-    width: 100%;
-    font-size: 14px;
-    border-bottom: 1px solid gray;
-    padding: .5rem 1rem;
-}
-
-.information_back img {
-    width: 100%;
-}
-
-.information_back h2 {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    100% {
+        background-position: 200px 0px;
+    }
 }

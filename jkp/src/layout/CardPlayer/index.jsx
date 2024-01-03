@@ -1,59 +1,48 @@
-import Statistics from '../Statistics';
-import TableMlbb from '../TableMlbb';
 import styles from './cardplayer.module.css';
-import img from '../../assets/kagura_png.jpg'
+import TableMlbb from '../TableMlbb';
 import { useState } from 'react';
+import HeaderCardMlbb from '../../components/HeaderCardMlbb';
+import InformationPlayerBackside from '../../components/InformationPlayerBackside';
+import InformationPlayerFrontside from '../../components/InformationPlayerFrontside';
 
 export default function CardPlayer(props) {
-
     const [isBack, setBack] = useState(false)
+    const {dataPlayer} = props
+
+    const {name, elo, statistics, about, lane, category, medal, titles} = dataPlayer
+    
+    const dataBattle = {
+        lane: dataPlayer.lane,
+        main: dataPlayer.main,
+        matches: dataPlayer.matches,
+        winRate: dataPlayer.winRate,
+    }
 
     function toggleBack() {
         setBack(!isBack);
     }
 
-    const {dataPlayer} = props
-
-    const dataBattle = {
-        lane: dataPlayer.lane,
-        main: dataPlayer.main,
-        titles: dataPlayer.titles,
-        winRate: dataPlayer.winRate,
-    }
-
-    const {name, elo, statistics, about} = dataPlayer
-    
     return (
-        <div className={styles.card} onClick={toggleBack}>
-            <div className={styles.information}>
-                <h2>{!isBack ? elo : name}</h2>
-                <h3>{!isBack ? '0 Títulos Nacionais' : '0 Medalhas JKP'}</h3>
-            </div>
+        <div className={`${styles.card} ${styles[lane]}`} onClick={toggleBack}>
+            <HeaderCardMlbb 
+                elo={elo}
+                category={category}
+                titles={titles}
+                medal={medal}
+                isBack={isBack}
+            />
+
             {!isBack ? (
-                <div className={styles.front}>
-                    
-                    <div className={styles.mid_card}>
-                        <h2 className={styles.nick}>
-                            {name}
-                        </h2>
-                        {/* <img src={kagura} alt="kagura" /> */}
-                    </div>
-                    <TableMlbb dataBattle={dataBattle}/>
-                    <p>*Clique para saber mais</p>
-                </div>
+                <InformationPlayerFrontside
+                    name={name}
+                    dataBattle={dataBattle}
+                />
             ) : (
-                <div className={styles.back}>
-                    <div className={styles.img_back}>
-                        {/* <img src={img}/> */}
-                        <h2>About</h2>
-                    </div>
-                    <div className={styles.information_back}>
-                        {/* <h2>{name}</h2> */}
-                        <p>{about}</p>
-                    </div>
-                    
-                    <Statistics statistics={statistics}/>
-                </div>
+                <InformationPlayerBackside
+                    name={name}
+                    about={about}
+                    statistics={statistics}
+                />
             )}
         </div>
     )
