@@ -9,6 +9,8 @@ td {
     border: 0;
     margin: 0;
     text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
 th {
@@ -18,4 +20,29 @@ th {
 th:not(th:last-child),
 td:not(td:last-child) {
     border-right: 1px solid gray;
+}
+
+.exp {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+
+.mid {
+    color: blue;
+    text-shadow: 0 0 5px blue;
+}
+
+.gold {
+    color: gold;
+    text-shadow: 0 0 5px gold;
+}
+
+.roaming {
+    color: orangered;
+    text-shadow: 0 0 5px orangered;
+}
+
+.jungle {
+    color: green;
+    text-shadow: 0 0 5px green;
 }

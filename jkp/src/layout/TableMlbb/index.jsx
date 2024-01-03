@@ -9,14 +9,14 @@ export default function TableMlbb(props) {
             <tr>
                 <th>Rota</th>
                 <th>Main</th>
-                <th>Titulos</th>
+                <th>Partidas</th>
                 <th>Win Rate</th>
             </tr>
             <tr>
-                <td>{dataBattle.lane}</td>
-                <td>{dataBattle.main}</td>
-                <td>{dataBattle.titles}</td>
-                <td>{dataBattle.winRate}</td>
+                <td className={styles[dataBattle.lane]}>{dataBattle.lane}</td>
+                <td className={styles[dataBattle.lane]}>{dataBattle.main}</td>
+                <td className={styles[dataBattle.lane]}>{dataBattle.matches}</td>
+                <td className={styles[dataBattle.lane]}>{dataBattle.winRate}%</td>
             </tr>
         </table>
     )
