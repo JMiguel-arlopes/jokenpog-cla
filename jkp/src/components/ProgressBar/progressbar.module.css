@@ -6,7 +6,8 @@
 
 .text_lane {
     display: block;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: .1em;
@@ -20,7 +21,7 @@
 
 .text_lane.mid {
     color: rgb(10, 10, 255);
-    text-shadow: 0 0 10px #3131ff;
+    text-shadow: 0 0 8px #3131ff;
 }
 
 .text_lane.gold {
