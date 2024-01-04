@@ -8,8 +8,7 @@
 
 .information_banner {
     flex: 1;
-    /* background-color: rgb(37, 150, 190); */
-    background: linear-gradient(90deg, rgb(13, 0, 78), rgba(21, 13, 59, 255));
+    background-color: rgb(21, 13, 59);
     min-height: calc(100vh - 100px);
     gap: 10px;
     padding: 2.5rem;

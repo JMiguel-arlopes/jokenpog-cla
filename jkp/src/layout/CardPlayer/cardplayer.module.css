@@ -12,18 +12,17 @@
 }
 
 .card {
+    color: white;
     display: flex;
     align-items: center;
     text-align: start;
     flex-wrap: wrap;
     width: 400px;
-    
-    color: white;
     border-radius: 10px;
-    border-top-left-radius: 10px;
     overflow: hidden;
     animation: move-it 5s linear infinite;
     margin: .5rem 0;
+    cursor: pointer;
 }
 
 .card.exp {

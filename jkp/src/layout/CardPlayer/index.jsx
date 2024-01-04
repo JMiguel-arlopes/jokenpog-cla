@@ -1,9 +1,8 @@
 import styles from './cardplayer.module.css';
-import TableMlbb from '../TableMlbb';
 import { useState } from 'react';
-import HeaderCardMlbb from '../../components/HeaderCardMlbb';
-import InformationPlayerBackside from '../../components/InformationPlayerBackside';
-import InformationPlayerFrontside from '../../components/InformationPlayerFrontside';
+import HeaderCardMlbb from '../../layout/HeaderCardMlbb';
+import InformationPlayerBackside from '../../layout/InformationPlayerBackside';
+import InformationPlayerFrontside from '../../layout/InformationPlayerFrontside';
 
 export default function CardPlayer(props) {
     const [isBack, setBack] = useState(false)

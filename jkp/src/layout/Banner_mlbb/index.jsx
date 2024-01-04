@@ -3,6 +3,7 @@ import Container from '../../components/Container';
 import bg from '../../assets/gif-bg.gif'
 import { FaYoutube, FaDiscord } from "react-icons/fa";
 import { IoMdDisc } from "react-icons/io";
+import WriteLetters from '../../components/WriteLetters';
 
 export default function Banner_mlbb() {
     return (
@@ -10,7 +11,7 @@ export default function Banner_mlbb() {
             <div className={styles.information_banner}>
                 <Container modifier='center start'>
                     <IoMdDisc className={styles.disc}/>
-                    <h3>Lorem Ipsum</h3>
+                    <h3>JokenpoG Team</h3>
                 </Container>
                     
 
@@ -19,11 +20,8 @@ export default function Banner_mlbb() {
                     <h2>segundo</h2>
                     <div className={styles.padding}>
                         <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vel voluptas, repellendus excepturi numquam omnis vitae
-                        aperiam, pariatur assumenda repudiandae similique est
-                        odit praesentium architecto et id quis adipisci dolorem
-                        recusandae!
+                            Nós somos uma comunidade de entretenimento e investimento com foco em jogos virtuais, 
+                            investimento e economia.
                         </p>
                         <Container modifier='start'>
                             <a href='/' className={styles.btn}>Get in</a>
