@@ -3,7 +3,6 @@ import Container from '../../components/Container';
 import bg from '../../assets/gif-bg.gif'
 import { FaYoutube, FaDiscord } from "react-icons/fa";
 import { IoMdDisc } from "react-icons/io";
-import WriteLetters from '../../components/WriteLetters';
 
 export default function Banner_mlbb() {
     return (

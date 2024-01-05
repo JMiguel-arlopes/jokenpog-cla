@@ -1,10 +1,11 @@
 import styles from './swipper.module.css';
 import { register } from 'swiper/element/bundle';
-import db from '../../db.json';
+
 import CardPlayer from '../CardPlayer';
 
-export default function SwipperHall() {
+export default function SwipperHall(prop) {
 
+    const {db} = prop;
     register();
 
     const shuffleMembers = db.members.sort(() => Math.random() - 0.5)
