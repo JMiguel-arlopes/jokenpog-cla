@@ -1,48 +1,54 @@
-// src/components/TypingAnimation.js
 import React, { useState, useEffect } from 'react';
-// import './TypingAnimation.css';
 
-const WriteLetters = () => {
+const TypingAnimation = () => {
+  const [textDisplay, setTextDisplay] = useState('');
+  const [i, setI] = useState(0);
+  const [j, setJ] = useState(0);
+  const [deletando, setDeletando] = useState(false);
+  const [final, setFinal] = useState(false);
 
-  const words = ['python', 'javascript']
-  const [currentWord, setCurrentWord] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [deleting, setDeleting] = useState(false);
+  const listaFrases = ['Mobile Legends: Bang Bang.', 'Call of Duty: Mobile.', 'Investimentos e Finanças.'];
+
+  const loop = () => {
+    if (i < listaFrases.length) {
+      const frase = listaFrases[i];
+      setFinal(false);
+
+      if (!deletando && j < frase.length) {
+        setTextDisplay((prevText) => prevText + frase[j]);
+        setJ((prevJ) => prevJ + 1);
+      }
+
+      if (deletando && j <= frase.length) {
+        setTextDisplay((prevText) => prevText.slice(0, -1));
+        setJ((prevJ) => prevJ - 1);
+      }
+
+      if (j === frase.length) {
+        setFinal(true);
+        setDeletando(true);
+      }
+
+      if (deletando && j === 0) {
+        setDeletando(false);
+        setTextDisplay('');
+        setI((prevI) => (prevI + 1 === listaFrases.length ? 0 : prevI + 1));
+      }
+    }
+
+    // const speedUp = Math.random() * (80 - 50) + 50;
+    // const normalSpeed = Math.random() * (300 - 200) + 200;
+
+    // let time = final ? 2000 : deletando ? speedUp : normalSpeed;
+    // let time = final ? 2000 : deletando ? speedUp : normalSpeed;
+    setTimeout(loop, 4000);
+  };
 
   useEffect(() => {
-    let timeoutId;
+    loop();
+  }, [i, j, deletando, final]); // Executar o loop quando as dependências mudarem
 
-    const typeNextLetter = () => {
-      const currentLength = currentWord.length;
-      const targetWord = words[currentIndex];
-
-      if (!deleting && currentLength < targetWord.length) {
-        setCurrentWord(targetWord.substring(0, currentLength + 1));
-        timeoutId = setTimeout(typeNextLetter, 100); // Ajuste a velocidade da digitação aqui (em milissegundos)
-      } else if (deleting && currentLength > 0) {
-        setCurrentWord(targetWord.substring(0, currentLength - 1));
-        timeoutId = setTimeout(typeNextLetter, 50); // Ajuste a velocidade da exclusão aqui (em milissegundos)
-      } else {
-        setDeleting(!deleting);
-
-        if (!deleting) {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-        }
-
-        timeoutId = setTimeout(typeNextLetter, 1000); // Tempo de espera antes de começar a próxima palavra
-      }
-    };
-
-    typeNextLetter();
-
-    return () => clearTimeout(timeoutId);
-  }, [currentWord, currentIndex, deleting, words]);
-
-  return (
-    <div className="typing-animation">
-      {currentWord}
-    </div>
-  );
+  return <div id="text">{textDisplay}</div>;
 };
 
-export default WriteLetters;
+export default TypingAnimation;
