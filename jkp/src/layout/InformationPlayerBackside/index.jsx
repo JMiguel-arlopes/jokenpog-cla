@@ -1,5 +1,5 @@
 import styles from './informationplayerbackside.module.css';
-import Statistics from '../../layout/Statistics';
+import Statistics from '../Affinity';
 
 export default function InformationPlayerBackside(props) {
 
