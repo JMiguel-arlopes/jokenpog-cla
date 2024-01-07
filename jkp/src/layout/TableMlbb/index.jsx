@@ -5,7 +5,7 @@ export default function TableMlbb(props) {
     const {dataBattle} = props
 
     return (
-        <table>
+        <table className={styles.table}>
             <tr>
                 <th>Rota</th>
                 <th>Main</th>

@@ -1,4 +1,4 @@
-table {
+.table {
     background-color: #080808;
     width: 100%;
     padding-bottom: .5rem;
@@ -13,12 +13,12 @@ td {
     letter-spacing: 1px;
 }
 
-th {
+.table th {
     border-bottom: 1px solid gray;
 }
 
-th:not(th:last-child),
-td:not(td:last-child) {
+.table th:not(th:last-child),
+.table td:not(td:last-child) {
     border-right: 1px solid gray;
 }
 
