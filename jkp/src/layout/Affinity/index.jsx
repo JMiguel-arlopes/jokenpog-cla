@@ -1,4 +1,4 @@
-import styles from './statistics.module.css';
+import styles from './affinity.module.css';
 import ProgressBar from '../../components/ProgressBar';
 
 
