@@ -8,10 +8,12 @@
   --cor-de-fundo-secundaria: #0c1538;
   --preto: #13131a;
   --bg: #010103;
+  --blue-bg: rgb(36, 23, 103);
   --border: .125rem solid #777;
   --vermelho: rgb(189, 0, 0);
   --white: #FFF;
   --laranja: rgb(255, 203, 70);
+
 }
 
 * {
