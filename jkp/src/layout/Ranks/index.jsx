@@ -87,7 +87,7 @@ export default function Ranks(prop) {
                 {/* <CardSimpleStatistic title='MCL' value={totalMatches}/> */}
             </Container>
             <Container modifier='stretch'>
-                <CardRankStatistic rank={rankLane} title={'lanes'}/>
+                <CardRankStatistic rank={rankLane} title={'especialização de lane'}/>
                 <CardRankStatistic rank={rankMedal} title={'Campeões JKP'}/>
             </Container>
         </section>
