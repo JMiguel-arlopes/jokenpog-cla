@@ -41,20 +41,29 @@
     text-shadow: 0 0 5px var(--laranja);
 }
 
+.table .first .classification {
+    font-size: 24px;
+    text-shadow: 0 0 5px blue;
+}
+
+.table .first .point {
+    font-size: 24px;
+}
+
 .classification {
-    color: var(--blue-bg);
-    font-size: 20px;
+    color: rgb(121, 94, 255);
+    font-size: 12px;
 }
 
 .name {
-    color: var(--blue-bg);
+    color: rgb(121, 94, 255);
     width: 100%;
     font-size: 20px;
     font-weight: 600;
 }
 
 .point {
-    color: var(--blue-bg);
+    color: rgb(121, 94, 255);
     font-size: 20px;
 }
 .first .classification {

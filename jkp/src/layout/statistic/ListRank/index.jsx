@@ -22,7 +22,7 @@ export default function ListRank(props) {
                         ${firstItem ? styles.first : ''}
                         ${lastItem ? styles.last : ''}
                     `}>
-                        <td className={styles.classification}>{index+1}º</td>
+                        <td className={styles.classification}>{index+1}º lugar</td>
                         <td className={styles.name}>{item.name}</td>
                         <td className={styles.point}>{item.value}</td>
                     </tr>
