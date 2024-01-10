@@ -3,7 +3,6 @@ import Container from '../../components/Container'
 import { useEffect, useState } from 'react';
 import CardSimpleStatistic from '../statistic/CardSimpleStatistic';
 import CardRankStatistic from '../statistic/CardRankStatistic';
-import SwipperHall from '../SwipperHall';
 
 export default function Ranks(prop) {
 
