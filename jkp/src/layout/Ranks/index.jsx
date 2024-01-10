@@ -3,6 +3,7 @@ import Container from '../../components/Container'
 import { useEffect, useState } from 'react';
 import CardSimpleStatistic from '../statistic/CardSimpleStatistic';
 import CardRankStatistic from '../statistic/CardRankStatistic';
+import SwipperHall from '../SwipperHall';
 
 export default function Ranks(prop) {
 
@@ -15,14 +16,12 @@ export default function Ranks(prop) {
     const [totalTitle, setTotalTitles] = useState(0)
     const [rankLane, setRankLane] = useState([])
     const [rankMedal, setRankMedal] = useState([])
-    
-    
 
     const calculateAverageWinRate = () => {
         
         const total = members.reduce((total, itemAtual) => total + itemAtual.winRate, 0)
 
-        const media = (total / members.length).toFixed(2) + '%'
+        const media = (total / members.length).toFixed(2)
         setAverageWR(media)
     }
 
@@ -80,16 +79,37 @@ export default function Ranks(prop) {
     
     return (
         <section className={styles.rank_container}>
-            <Container modifier='stretch'>
-                <CardSimpleStatistic title='Partidas totais' value={totalMatches}/>
-                <CardSimpleStatistic title='Win Rate Geral' value={averageWR}/>
-                <CardSimpleStatistic title='Titulos Nacionais' value={totalTitle}/>
-                {/* <CardSimpleStatistic title='MCL' value={totalMatches}/> */}
-            </Container>
-            <Container modifier='stretch'>
-                <CardRankStatistic rank={rankLane} title={'especialização de lane'}/>
-                <CardRankStatistic rank={rankMedal} title={'Campeões JKP'}/>
-            </Container>
+            <div className={styles.rank_content}>
+                <Container modifier='stretch'>
+                    <CardSimpleStatistic
+                        title='Partidas totais'
+                        value={totalMatches}
+                        suffix=' Partidas'
+                    />
+                    <CardSimpleStatistic
+                        title='Win Rate Geral'
+                        value={averageWR}
+                        suffix='%'
+                    />
+                    <CardSimpleStatistic
+                        title='Titulos Nacionais'
+                        value={totalTitle}
+                        suffix=' Titulos'
+                    />
+                </Container>
+                <Container modifier='stretch'>
+                    <CardRankStatistic
+                        rank={rankLane}
+                        title={'especialização de lane'}
+                        name='Players'
+                    />
+                    <CardRankStatistic
+                        rank={rankMedal}
+                        title={'Campeões JKP'}
+                        name='Medalhas'
+                    />
+                </Container>
+            </div>
         </section>
     )
 }

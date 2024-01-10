@@ -1,5 +1,16 @@
 .rank_container {
     width: 100vw;
     overflow: hidden;
-    padding: 2rem 4rem;
+    background-image: 
+    linear-gradient(rgb(21, 13, 59) 10%, rgba(21, 13, 59, .8) 25%, rgba(21, 13, 59, .8) 75%,rgb(21, 13, 59)),
+    url(../../assets/bg/Starmancer.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 4rem;
+}
+
+.rank_content {
+    width: 100%;
+    
 }
