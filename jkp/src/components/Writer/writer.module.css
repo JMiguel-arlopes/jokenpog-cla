@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+.writer {
+    font-family: 'Black Ops One', system-ui;
+    margin: .5em 0;
+}
+
+.writer p {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: purple;
+    text-shadow: -.2px .2px white;
+}
+
+.writer span {
+    color: rgb(90, 0, 90);
+    animation: blink .5s infinite;
+    text-shadow: none;
+}
+
+
+@keyframes blink {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
