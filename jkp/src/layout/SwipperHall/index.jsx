@@ -12,11 +12,11 @@ export default function SwipperHall(prop) {
 
     return (
         <section className={styles.container_swipper}>
-            <h2>Membros</h2>
+            <h2>Conheça-nos!</h2>
                 <div className={styles.content_slide}>
                     <div>
                         <swiper-container
-                            slides-per-view='3' 
+                            slides-per-view='1' 
                             speed="500"
                             loop="true"
                             css-mode="true"

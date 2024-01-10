@@ -1,22 +1,28 @@
 .container_swipper {
     font-family: var(--fonte-secundaria);
-    background: linear-gradient(rgb(28, 18, 80), rgb(36, 23, 103));
+    flex: 1;
+    /* background: rgb(21, 13, 59); */
+
+    /* linear-gradient(rgb(28, 18, 80), rgb(36, 23, 103)), */
     text-align: center;
-    width: 100vw;
-    padding: 2rem;
+    max-width: 100%;
+    display: inline-block;
+    /* padding: 2rem; */
     overflow: hidden;
 }
 
 .container_swipper>h2 {
-    color: #fff;
+    color: var(--laranja);
+    text-transform: uppercase;
+    margin-bottom: .5rem;
     width: 100%;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
 }
 
 .content_slide {
-    height: 80vh;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
