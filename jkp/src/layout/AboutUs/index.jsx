@@ -1,14 +1,13 @@
 import styles from './aboutus.module.css'
-// import jkp_img from '../../assets/img_3.png'
 import Container from '../../components/Container'
-// import Button from '../../components/Button'
 import { FaCoins, FaPeopleGroup } from "react-icons/fa6";
 import { IoLogoGameControllerB } from "react-icons/io";
+import SwipperHall from '../SwipperHall';
 
-export default function AboutUs() {
+export default function AboutUs({db}) {
     return (
         <section className={styles.container_aboutus}>
-            <Container>
+            <Container modifier='nowrap'>
                 <div className={styles.information_aboutus}>
                     <h3>Quem somos?</h3>
                     <p>
@@ -27,7 +26,9 @@ export default function AboutUs() {
                         <FaPeopleGroup/>
                     </div> 
                 </div>
-                <div className={styles.img_aboutus}/>
+                <div className={styles.img_aboutus}>
+                    <SwipperHall db={db} />
+                </div>
             </Container>
         </section>
     )

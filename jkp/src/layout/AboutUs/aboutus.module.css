@@ -1,43 +1,26 @@
 .container_aboutus {
-    /* padding: 1rem 5rem; */
-    background: linear-gradient(var(--vermelho), var(--bg));
+    max-width: 100vw;
+    width: calc(100vw - 14.5px);
+    overflow: hidden;
+    background: linear-gradient(rgb(21, 13, 59), var(--blue-bg));
     font-family: var(--fonte-principal);
     box-sizing: border-box;
 }
 
-.container_aboutus h2 {
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 38px;
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
-
-.img_aboutus {
-    flex: 1;
-    height: 450px;
-    background-image: 
-        linear-gradient(rgba(0, 0, 70, 0.5), rgba(0, 0, 70, 0.5)),
-        url(../../assets/kagura23.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
 .information_aboutus {
     text-align: left;
-    padding: 1rem 4rem;
+    padding: 2rem;
     flex: 1;
+    border-left: 2px solid black;
+    border-left: 2px solid black;
+    /* min-height: 75vh; */
 }
 
 .information_aboutus h3 {
-    font-size: 28px;
+    font-size: 32px;
     color: var(--laranja);
     font-weight: 500;
-    margin-bottom: .1rem;
+    margin-bottom: .5rem;
 }
 
 .information_aboutus p {
@@ -51,7 +34,7 @@
 
 .btnContainer {
     margin-top: 1.5rem;
-    /* padding: 0 5rem; */
+    padding: 0 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,4 +44,22 @@
     color: var(--white);
     font-size: 28px;
     margin: 0 6rem;
+}
+
+.img_aboutus {
+    font-family: var(--fonte-secundaria);
+    background-color: rgb(21, 13, 59);
+    padding: 1rem;
+    flex: 1;
+    height: 75vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+    box-shadow: 0 0 12px black;
+    background-color: (21, 13, 59);
 }
