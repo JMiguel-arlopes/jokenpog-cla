@@ -1,9 +1,10 @@
-import ListRank from '../ListRank';
+import ListRank from '../TableRank';
 import styles from './cardrankstatistic.module.css';
 
 export default function CardRankStatistic(props) {
 
-    const {title, rank} = props
+    const {title, rank, name} = props
+
 
     return (
         <div className={styles.container_rank}>
@@ -11,7 +12,7 @@ export default function CardRankStatistic(props) {
                 <h2>{title}</h2>
             </div>
             <div className={styles.rank}>
-                <ListRank rank={rank}/>
+                <ListRank rank={rank} name={name}/>
             </div>
         </div>
     )
