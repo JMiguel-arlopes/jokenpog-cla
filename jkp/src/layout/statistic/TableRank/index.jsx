@@ -15,10 +15,7 @@ export default function ListRank(props) {
             {rank.map((item, index) => {
                 const firstItem = index === 0
                 const lastItem = index === rank.length - 1
-                console.log(item.name.toLowerCase())
-
                 
-
                 return (
                     <tr className={`
                         ${firstItem ? styles.first : ''}
