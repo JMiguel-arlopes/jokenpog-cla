@@ -1,8 +1,8 @@
-import styles from './cardplayer.module.css';
 import { useState } from 'react';
-import HeaderCardMlbb from '../../layout/HeaderCardMlbb';
-import InformationPlayerBackside from '../../layout/InformationPlayerBackside';
-import InformationPlayerFrontside from '../../layout/InformationPlayerFrontside';
+import styles from './cardplayer.module.css';
+import HeaderCardMlbb from '../HeaderCardMlbb';
+import InformationPlayerBackside from '../InformationPlayerBackside';
+import InformationPlayerFrontside from '../InformationPlayerFrontside';
 
 export default function CardPlayer(props) {
     const [isBack, setBack] = useState(false)
@@ -22,7 +22,10 @@ export default function CardPlayer(props) {
     }
 
     return (
-        <div className={`${styles.card} ${styles[lane]}`} onClick={toggleBack}>
+        <div 
+            className={`${styles.card} ${styles[lane]}`} 
+            onClick={toggleBack}
+        >
             <HeaderCardMlbb 
                 elo={elo}
                 category={category}

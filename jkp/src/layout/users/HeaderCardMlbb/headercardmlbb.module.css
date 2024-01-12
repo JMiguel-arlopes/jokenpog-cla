@@ -13,8 +13,7 @@
 }
 
 .information h2 {
-    font-family: 'Zombie Brush Personal Use', sans-serif;
-    font-family: 'KNIGHT WARRIOR', sans-serif;
+    font-family: var(--header-card-font);
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 1.75px;

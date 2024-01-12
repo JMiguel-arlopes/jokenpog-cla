@@ -1,8 +1,8 @@
 import styles from './ranks.module.css';
 import Container from '../../components/Container'
 import { useEffect, useState } from 'react';
-import CardSimpleStatistic from '../statistic/CardSimpleStatistic';
-import CardRankStatistic from '../statistic/CardRankStatistic';
+import CardSimpleStatistic from '../../layout/statistic/CardSimpleStatistic';
+import CardRankStatistic from '../../layout/statistic/CardRankStatistic';
 
 export default function Ranks(prop) {
 
@@ -66,7 +66,6 @@ export default function Ranks(prop) {
         return shuffle.sort((a, b) => b.value - a.value)
     }
 
-
     useEffect(() => {
         setRankLane(calculateMostUsedItemInArray(allLanesPlayers))
         setRankMedal(sortPlayersBy('medal'))
@@ -79,7 +78,7 @@ export default function Ranks(prop) {
     return (
         <section className={styles.rank_container}>
             <div className={styles.rank_content}>
-                <Container modifier='stretch'>
+                <div className={styles.container_cards}>
                     <CardSimpleStatistic
                         title='Partidas totais'
                         value={totalMatches}
@@ -95,11 +94,11 @@ export default function Ranks(prop) {
                         value={totalTitle}
                         suffix=' Titulos'
                     />
-                </Container>
-                <Container modifier='stretch'>
+                </div>
+                <div className={styles.container_cards}>
                     <CardRankStatistic
                         rank={rankLane}
-                        title={'especialização de lane'}
+                        title={'Mains por Lane'}
                         name='Players'
                     />
                     <CardRankStatistic
@@ -107,7 +106,7 @@ export default function Ranks(prop) {
                         title={'Campeões JKP'}
                         name='Medalhas'
                     />
-                </Container>
+                </div>
             </div>
         </section>
     )

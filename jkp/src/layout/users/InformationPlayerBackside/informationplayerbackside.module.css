@@ -1,21 +1,23 @@
 .back {
     background: #080808;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    /* padding: 1rem; */
+    width: 100%;
 }
 
 .container_name {
     padding: 0 1rem;
     position: relative;
-    background: linear-gradient(#222, #080808)
+    background: 
+        linear-gradient(
+            var(--weak-black),
+            #080808);
 }
 
 .container_name h2 {
-    font-family: 'Zombie Brush Personal Use', sans-serif;
+    font-family: var(--brush-font);
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -24,22 +26,13 @@
 }
 
 .about_back {
-    width: 100%;
     font-size: 14px;
     padding: 0 1rem;
-    padding-top: 0.5rem;
+    width: 100%;
 }
 
 .about_back p {
-    padding-bottom: .5rem;
+    padding: .5rem 0;
     font-size: 14px;
     border-bottom: 1px solid gray;
 }
-
-/* .about_back h2 {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 4px solid gray;
-} */

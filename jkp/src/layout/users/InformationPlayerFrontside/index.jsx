@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import TableMlbb from '../../layout/TableMlbb'
 import styles from './informationplayerfrontside.module.css'
+import TableMlbb from '../TableMlbb'
+
 
 
 export default function InformationPlayerFrontside(props) {
@@ -10,7 +11,7 @@ export default function InformationPlayerFrontside(props) {
     useEffect(() => {
         const importImg = async () => {
             try {
-                const img = await import(`../../assets/png/${dataBattle.main.toLowerCase()}.png`);
+                const img = await import(`../../../assets/png/${dataBattle.main.toLowerCase()}.png`);
                 setImg(img.default);
             } catch(error) {
                 console.log('erro ao achar a imagem: ', error)

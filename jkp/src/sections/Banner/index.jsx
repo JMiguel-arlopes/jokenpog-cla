@@ -14,7 +14,6 @@ export default function Banner_mlbb() {
                     <h3>JokenpoG Team</h3>
                 </Container>
                     
-
                 <div className={styles.content_banner}>
                     <h3>primeiro</h3>
                     <Writer />

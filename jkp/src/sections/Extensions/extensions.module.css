@@ -2,6 +2,8 @@
     font-family: var(--fonte-secundaria);
     padding: 3rem 2rem;
     background: linear-gradient(rgb(21, 13, 59), rgb(5, 0, 30));
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .container_extensions>h2{
@@ -9,4 +11,16 @@
     text-shadow: -2px 2px black;
     font-size: 56px;
     margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 748px) {
+    .container_extensions {
+        padding: 2rem 1rem;
+    }
+
+    .container_extensions>h2 {
+        font-size: 36px;
+        margin-bottom: 1.75rem;
+    }
 }

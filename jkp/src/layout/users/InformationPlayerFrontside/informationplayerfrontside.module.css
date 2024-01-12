@@ -3,7 +3,7 @@
 }
 
 .container_presentation {
-    background: linear-gradient(#222, #080808);
+    background: linear-gradient(var(--weak-black), #080808);
     padding: 0 1.25rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -21,8 +21,7 @@
 }
 
 .container_presentation h2 {
-    font-family: 'KNIGHT WARRIOR', sans-serif;
-    font-family: 'Zombie Brush Personal Use', sans-serif;
+    font-family: var(--brush-font);
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 2.1px;
@@ -55,10 +54,10 @@
     right: 0;
     bottom: 0;
     max-width: 75%;
-    pointer-events: none;
     max-height: 175px;
     z-index: 10;
-    /* animation: fade-in .05s linear; */
+    pointer-events: none;
+    animation: fade-in .4s linear;
 }
 
 .front p {
@@ -69,5 +68,5 @@
 }
 
 @keyframes fade-in {
-    0% {opacity: 0}
+    0% {opacity: 0; transform: translateX(100px);}
 }
