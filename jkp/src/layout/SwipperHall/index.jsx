@@ -1,7 +1,6 @@
 import styles from './swipper.module.css';
+import CardPlayer from '../users/CardPlayer';
 import { register } from 'swiper/element/bundle';
-
-import CardPlayer from '../CardPlayer';
 
 export default function SwipperHall(prop) {
 
@@ -20,6 +19,7 @@ export default function SwipperHall(prop) {
                             speed="500"
                             loop="true"
                             css-mode="true"
+                            space-between= '40'
                             allow-slide-next="true"
                             navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
                         >   
