@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins&display=swap');
+@import url('https://fonts.cdnfonts.com/css/buchanan');
+@import url('https://fonts.cdnfonts.com/css/knight-warrior');
+@import url('https://fonts.cdnfonts.com/css/zombie-brush-personal-use');
 
 :root {
   --fonte-principal: 'Black Ops One', cursive;
   --fonte-secundaria: 'Poppins', sans-serif;
+  --statistic-font: 'Buchanan', sans-serif;
+  --header-card-font: 'KNIGHT WARRIOR', sans-serif;
+  --brush-font: 'Zombie Brush Personal Use', sans-serif;
   --cor-de-fundo: #01040c;
   --cor-de-fundo-secundaria: #0c1538;
-  --preto: #13131a;
   --bg: #010103;
+  --dark-blue-bg: rgb(21, 13, 59);
   --blue-bg: rgb(36, 23, 103);
+  --light-blue-bg: rgb(44, 44, 199);
   --border: .125rem solid #777;
-  --vermelho: rgb(189, 0, 0);
+  --preto: #13131a;
+  --weak-black: #222;
   --white: #FFF;
+  --purple: rgb(145, 23, 145);
+  --vermelho: rgb(189, 0, 0);
   --laranja: rgb(255, 203, 70);
+  --dark-orange: rgb(236, 161, 0);
+  --cyan: rgb(0, 130, 130);
+  --dark-cyan: rgb(0, 70, 70);
 
 }
 
@@ -29,6 +42,7 @@
   top: 0;
   left: 0;
   right: 0;
+  pointer-events: none;
 }
 
 div {
