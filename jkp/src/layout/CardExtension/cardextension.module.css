@@ -13,6 +13,7 @@
     border-bottom-right-radius: 32px;
     border: 2px solid black;
     box-shadow: 0 3px 5px black;
+    position: relative;
     cursor: pointer;
     transition: .4s;
 }
@@ -22,23 +23,30 @@
     box-shadow: 0 0 35px var(--laranja);
 }
 
-.information_extension{
-    background-color: rgb(44, 44, 199);
-    text-align: center;
+.information_extension {
+    background-color: var(--light-blue-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 300px;
+    text-align: center;
     padding: 2.5rem 1rem;
+}
+
+.content_title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content_img {
     width: 100px;
     height: 100px;
     padding: 2rem;
-    background-color: whitesmoke;
-    /* border: 2px solid black; */
+    background-color: var(--white);
     border-radius: 50%;
     margin-bottom: 1rem;
 }
@@ -69,7 +77,7 @@
 }
 
 .vertical {
-    background-color: purple;
+    background-color: var(--purple);
     padding: 0 .25em;
     writing-mode: vertical-rl;
     border-left: 2px solid black;
@@ -79,4 +87,72 @@
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width: 748px) {
+    .card_extension {
+        min-height: initial;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 1rem 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .card_extension:hover {
+        transform: scale(1.01) translateY(-10px);
+        box-shadow: 0 0 12px var(--laranja);
+    }
+
+    .information_extension {
+        justify-content: start;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .content_title {
+        background-color: var(--light-blue-bg);
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .content_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: initial;
+        height: inherit;
+        padding: .7em;
+        margin: 0;
+    }
+
+    .content_img svg {
+        color: black;
+        font-size: 16px;
+    }
+
+    .content_title figcaption {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 5px 10px;
+        background:
+                linear-gradient(var(--white),
+                    var(--laranja));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        background-clip: text;
+    }
+
+    .information_extension p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .vertical p {
+        padding: 1rem 0;
+    }
 }

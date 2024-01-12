@@ -7,10 +7,13 @@ export default function CardExtension(props) {
     return (
         <div className={styles.card_extension}>
             <div className={styles.information_extension}>
-                <div className={styles.content_img}>
-                    {icon}
+                <div className={styles.content_title}>
+                    <figure className={styles.content_img}>
+                        {icon}
+                    </figure>
+                    <figcaption>{title}</figcaption>
                 </div>
-                <h3>{title}</h3>
+                
                 <p>{text}</p>
             </div>
             <div className={styles.vertical}>
