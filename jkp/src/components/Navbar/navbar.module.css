@@ -1,4 +1,5 @@
 .navbar {
+    font-family: var(--fonte-principal);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,6 +8,8 @@
     background-color: var(--bg);
     border-bottom: var(--border);
     height: 95px;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .logo {
@@ -33,7 +36,6 @@
     font-size: 1.2em;
     font-weight: 500;
     text-decoration: none;
-    font-family: var(--fonte-principal);
     text-transform: capitalize;
     transition: .2s;
 }
@@ -46,11 +48,68 @@
     border-width: 2px;
 }
 
-.navbar h2 {
+.jkp {
     text-align: right;
-    font-family: var(--fonte-principal);
     font-size: 45px;
     font-weight: 500;
     color: var(--white);
     flex: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .navbar {
+        padding: 1rem;
+        background-color: var(--bg);
+        height: initial;
+        max-width: 100vw;
+        overflow: hidden;
+        position: relative;
+        overflow: initial;
+    }
+
+    .links {
+        font-family: var(--fonte-secundaria);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: var(--preto);
+        border: var(--border);
+        border-right: 0;
+        animation: slide .2s ease-out;
+
+    }
+
+    .links a {
+        width: 100%;
+        font-size: 18px;
+        padding: 1em 2rem;
+        /* border-bottom: var(--border); */
+    }
+
+    .hide {
+        display: inline-block;
+    }
+
+    .show {
+        display: none;
+    }
 }
