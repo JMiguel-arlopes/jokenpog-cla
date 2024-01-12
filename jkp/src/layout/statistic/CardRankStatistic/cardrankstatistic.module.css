@@ -1,19 +1,20 @@
-@import url('https://fonts.cdnfonts.com/css/buchanan');
-
 .container_rank {
+    font-family: var(--statistic-font);
     flex: 1;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    
+    max-width: 600px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    font-family: 'Buchanan', sans-serif;
     overflow: hidden;
     margin-top: 5rem;
     animation: blink 2s linear infinite alternate;
+}
+
+.container_rank:not(.container_rank:last-child) {
+    margin-right: 5rem;
 }
 
 .rank_header {
@@ -34,7 +35,10 @@
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 3px;
-    background: linear-gradient(white, var(--laranja));
+    background: 
+        linear-gradient(
+            var(--white),
+            var(--laranja));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -49,9 +53,27 @@
 
 @keyframes blink {
     0% {
-        box-shadow: 0 0 0 2px rgb(236, 161, 0), 0 0 24px rgb(236, 161, 0);
+        box-shadow: 
+            0 0 0 2px var(--dark-orange),
+            0 0 24px var(--dark-orange);
     }
     100% {
-        box-shadow: 0 0 0 2px rgb(236, 161, 0), 0 0 12px rgb(236, 161, 0);
+        box-shadow:
+            0 0 0 2px var(--dark-orange),
+            0 0 12px var(--dark-orange);
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .container_rank {
+        width: 100%;
+    }
+
+    .container_rank:not(.container_rank:last-child) {
+        margin-right: 0;
+    }
+
+    .rank_header h2 {
+        font-size: 32px;
     }
 }

@@ -1,5 +1,6 @@
-import ListRank from '../TableRank';
 import styles from './cardrankstatistic.module.css';
+import ListRank from '../TableRank';
+
 
 export default function CardRankStatistic(props) {
 
