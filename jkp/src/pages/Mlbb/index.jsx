@@ -1,15 +1,15 @@
-import Banner_mlbb from '../../layout/Banner_mlbb';
-import Extensions from '../../layout/Extensions';
-import Ranks from '../../layout/Ranks';
+import Banner_mlbb from '../../sections/Banner';
+import Extensions from '../../sections/Extensions';
+import Statistics from '../../sections/Statistics';
 import db from '../../db.json';
-import AboutUs from '../../layout/AboutUs';
+import AboutUs from '../../sections/AboutUs';
 
 export default function Mlbb() {
     return (
         <>
             <Banner_mlbb />
             <AboutUs db={db}/>
-            <Ranks db={db}/>
+            <Statistics db={db}/>
             <Extensions />
         </>
     )
