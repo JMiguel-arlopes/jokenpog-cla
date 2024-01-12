@@ -12,7 +12,6 @@ export default function CardSimpleStatistic(props) {
             <div className={styles.content_percent}>
                 <p>{value}{suffix}</p>
             </div>
-            
         </div>
     )
 }

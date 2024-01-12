@@ -1,18 +1,24 @@
-@import url('https://fonts.cdnfonts.com/css/buchanan');
-
 .container_card_simple {
     flex: 1;
-    max-width: 350px;
-    margin: 0 1.25rem;
-    border: 3px solid var(--laranja);
-    box-shadow: 0 0 0 2px rgb(236, 161, 0), 0 0 18px  rgb(236, 161, 0);
-    background-color: rgb(36, 23, 103);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 350px;
+    border: 3px solid var(--laranja);
+    box-shadow: 
+        0 0 0 2px var(--dark-orange),
+        0 0 18px var(--dark-orange);
+    background: 
+        linear-gradient(
+            var(--dark-blue-bg),
+            var(--blue-bg));
     border-radius: 3px;
     overflow: hidden;
+}
+
+.container_card_simple:not(.container_card_simple:last-child) {
+    margin-right: 5rem;
 }
 
 .content_title {
@@ -21,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(5, 0, 31);
+    background-color: var(--preto);
     padding: 1em;
     border-bottom: var(--laranja) solid 2px;
     overflow: hidden;
@@ -34,7 +40,7 @@
 }
 
 .container_card_simple h2 {
-    font-family: 'Buchanan', sans-serif;
+    font-family: var(--statistic-font);
     color: var(--laranja);
     text-transform: uppercase;
     font-size: 28px;
@@ -45,7 +51,6 @@
 
 .container_card_simple p {
     color: var(--laranja);
-    text-shadow: -1px 1px rgb(255, 183, 0);
     font-size: 46px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -54,10 +59,26 @@
 
 @keyframes blink-text {
     0% {
-        text-shadow: 0 0 8px black
+        text-shadow: 0 0 8px black;
     }
 
     100% {
-        text-shadow: 0 0 8px var(--laranja)
+        text-shadow: 0 0 8px var(--laranja);
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .container_card_simple {
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+
+
+    .container_card_simple {
+        flex-direction: column;
+    }
+
+    .container_card_simple:not(.container_card_simple:last-child) {
+        margin-right: 0;
     }
 }
