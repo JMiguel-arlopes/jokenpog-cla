@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Home from "./pages/Home";
 import Mlbb from "./pages/Mlbb";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -13,12 +12,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/mlbb",
         element: <Mlbb />,
       },
+      // {
+      //   path: "/mlbb",
+      //   element: <Mlbb />,
+      // },
     ],
   },
 ]);
