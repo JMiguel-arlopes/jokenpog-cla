@@ -21,6 +21,7 @@
 .card_extension:hover {
     transform: scale(1.04) translateY(-20px);
     box-shadow: 0 0 35px var(--laranja);
+    border-color: var(--laranja);
 }
 
 .information_extension {
@@ -86,6 +87,11 @@
     font-weight: 900;
     letter-spacing: 2px;
     padding: 1rem 0;
+}
+
+.card_extension:hover .vertical {
+    border-width: 1px;
+    border-color: var(--laranja);
 }
 
 
