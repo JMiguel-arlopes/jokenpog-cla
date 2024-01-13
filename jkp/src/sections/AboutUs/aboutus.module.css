@@ -80,7 +80,7 @@
     .container_aboutus {
         width: 100vw;
         flex-direction: column;
-        background: linear-gradient(var(--dark-blue-bg-mobile), var(--blue-bg-mobile) 75%);
+        background: linear-gradient(var(--blue-bg-mobile), var(--light-blue-bg) 75%);
     }
 
     .information_aboutus {
@@ -89,7 +89,7 @@
     }
 
     .img_aboutus {
-        background-color: var(--dark-blue-bg-mobile);
+        background: linear-gradient(var(--cor-de-fundo), var(--dark-blue-bg-mobile));
         min-height: initial;
         padding: 1rem .75rem;
         border-left: none;
