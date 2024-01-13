@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: stretch;
     text-align: left;
-    height: calc(100vh - 95px);
+    min-height: calc(100vh - 95px);
 }
 
 .information_banner {
@@ -101,6 +101,17 @@
     height: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .container_banner_mlbb {
+        background-color: var(--dark-blue-bg);
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+
+    .information_banner {
+        width: 60%;
+    }
+}
 
 @media only screen and (max-width: 748px) {
     .container_banner_mlbb {
@@ -108,9 +119,17 @@
         flex-direction: column-reverse;
     }
 
+    .information_banner {
+        width: 100%;
+    }
+
     .content_banner>p {
         font-size: 18px;
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .container_banner_mlbb img {
+        display: none;
     }
 }
