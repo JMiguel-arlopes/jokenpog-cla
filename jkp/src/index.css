@@ -16,6 +16,8 @@
   --dark-blue-bg: rgb(21, 13, 59);
   --blue-bg: rgb(36, 23, 103);
   --light-blue-bg: rgb(44, 44, 199);
+  --dark-blue-bg-mobile: rgb(29, 18, 80);
+  --blue-bg-mobile: rgb(48, 26, 153);
   --border: .125rem solid #777;
   --preto: #13131a;
   --weak-black: #222;
@@ -33,6 +35,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth
 }
 
 *::before {
