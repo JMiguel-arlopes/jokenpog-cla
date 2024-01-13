@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './cardplayer.module.css';
 import HeaderCardMlbb from '../HeaderCardMlbb';
 import InformationPlayerBackside from '../InformationPlayerBackside';
 import InformationPlayerFrontside from '../InformationPlayerFrontside';
-
+// --dark-blue-bg: rgb(29, 18, 80);
+//   --blue-bg: rgb(48, 26, 153);
+//   --light-blue-bg: rgb(44, 44, 199);
 export default function CardPlayer(props) {
     const [isBack, setBack] = useState(false)
     const {dataPlayer} = props

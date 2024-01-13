@@ -10,6 +10,7 @@
     animation: move-it 5s linear infinite;
     margin: .5rem 0;
     cursor: pointer;
+    transition: .2s all;
 }
 
 .card.exp {
