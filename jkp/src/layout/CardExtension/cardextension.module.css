@@ -7,7 +7,7 @@
     align-items: stretch;
     min-height: 400px;
     max-width: 400px;
-    margin: 0 3rem;
+    margin: 2rem 3rem;
     overflow: hidden;
     border-top-left-radius: 32px;
     border-bottom-right-radius: 32px;
@@ -35,11 +35,14 @@
 }
 
 .content_title {
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: .2rem;
+    border-bottom: 2px solid black;
 }
 
 .content_img {
@@ -48,7 +51,6 @@
     padding: 2rem;
     background-color: var(--white);
     border-radius: 50%;
-    margin-bottom: 1rem;
 }
 
 .content_img svg {
@@ -56,21 +58,17 @@
     font-size: 36px;
 }
 
-.information_extension h3 {
+.content_title figcaption {
     color: var(--laranja);
     text-transform: uppercase;
-    font-size: 18px;
     font-weight: 700;
-    letter-spacing: 1px;
-    padding-bottom: .5rem;
-    margin-bottom: .5rem;
-    border-bottom: 2px solid black;
-    width: 100%;
+    font-size: 18px;
+    padding: 5px 10px;
 }
 
 .information_extension p {
-    text-align: left;
-    font-size: 12px;
+    text-align: center;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: .5rem;
@@ -87,9 +85,11 @@
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 2px;
+    padding: 1rem 0;
 }
 
-@media screen and (max-width: 748px) {
+
+@media screen and (max-width: 768px) {
     .card_extension {
         min-height: initial;
         justify-content: space-between;
@@ -97,6 +97,7 @@
         margin: 1rem 0;
         border-bottom-right-radius: 0;
         border-top-left-radius: 0;
+        border-radius: 2px;
     }
 
     .card_extension:hover {
@@ -114,8 +115,8 @@
         background-color: var(--light-blue-bg);
         flex-direction: row;
         justify-content: left;
-        width: 100%;
-        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
     }
 
     .content_img {
@@ -133,26 +134,9 @@
         font-size: 16px;
     }
 
-    .content_title figcaption {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 18px;
-        padding: 5px 10px;
-        background:
-                linear-gradient(var(--white),
-                    var(--laranja));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
-        background-clip: text;
-    }
-
     .information_extension p {
+        text-align: left;
         font-size: 14px;
         margin-bottom: 0;
-    }
-
-    .vertical p {
-        padding: 1rem 0;
     }
 }
