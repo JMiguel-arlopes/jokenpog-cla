@@ -7,6 +7,7 @@
     align-items: stretch;
     text-align: left;
     min-height: calc(100vh - 95px);
+    background-color: var(--dark-blue-bg);
 }
 
 .information_banner {
@@ -16,7 +17,6 @@
     align-items: center;
     min-height: calc(100vh - 100px);
     justify-content: space-between;
-    background-color: var(--dark-blue-bg);
     gap: 10px;
     padding: 2.5rem;
 }
@@ -117,9 +117,11 @@
     .container_banner_mlbb {
         width: 100vw;
         flex-direction: column-reverse;
+        background-color: var(--dark-blue-bg-mobile);
     }
 
     .information_banner {
+        padding: 1rem;
         width: 100%;
     }
 
