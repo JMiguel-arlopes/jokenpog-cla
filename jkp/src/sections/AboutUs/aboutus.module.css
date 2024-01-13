@@ -1,13 +1,12 @@
 .container_aboutus {
     max-width: 100vw;
-    /* width: calc(100vw - 14.5px); */
     overflow: hidden;
     background: linear-gradient(var(--dark-blue-bg), var(--blue-bg) 75%);
     font-family: var(--fonte-principal);
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     flex-wrap: nowrap;
     width: 100%;
@@ -22,6 +21,7 @@
     padding: 2rem;
     border-bottom: 2px solid black;
     box-shadow: inset 0px -2px 2px black;
+    max-width: 60%;
 }
 
 .information_aboutus h3 {
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    height: 75vh;
+    min-height: 75vh;
     text-align: center;
     width: 100%;
     overflow: hidden;
@@ -69,8 +69,14 @@
     box-shadow: 0 0 12px black;
 }
 
+@media screen and (max-width: 1024px) {
+    .information_aboutus {
+        padding: 2rem 1rem;
+    }
+}
 
-@media screen and (max-width: 748px) {
+
+@media screen and (max-width: 768px) {
     .container_aboutus {
         width: 100vw;
         flex-direction: column;
@@ -78,6 +84,7 @@
 
     .information_aboutus {
         padding: 2rem 1rem;
+        max-width: 100%;
     }
 
     .img_aboutus {
