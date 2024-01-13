@@ -107,13 +107,19 @@
         border: var(--border);
         border-right: 0;
         animation: slide .2s ease-out;
-
+        padding: 1.25em 3rem;
+        z-index: 100;
     }
 
     .links a {
-        width: 100%;
         font-size: 18px;
-        padding: 1em 2rem;
+        padding-top: .5rem;
+        padding-bottom: .2em;
+    }
+
+    .links a:hover {
+        padding-top: .5rem;
+        padding-bottom: .2em;
     }
 
     .hide {
