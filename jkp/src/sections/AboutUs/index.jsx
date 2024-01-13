@@ -5,7 +5,7 @@ import { IoLogoGameControllerB } from "react-icons/io";
 
 export default function AboutUs({db}) {
     return (
-        <section className={styles.container_aboutus}>
+        <section className={styles.container_aboutus} id='aboutus'>
             <div className={styles.information_aboutus}>
                 <h3>Quem somos?</h3>
                 <p>
@@ -24,7 +24,7 @@ export default function AboutUs({db}) {
                     <FaPeopleGroup/>
                 </div> 
             </div>
-            <div className={styles.img_aboutus}>
+            <div className={styles.img_aboutus} id='members'>
                 <SwipperHall db={db} />
             </div>
         </section>
