@@ -13,12 +13,18 @@
     margin-bottom: 3rem;
 }
 
-
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 1024px) {
     .container_extensions {
         padding: 2rem 1rem;
     }
 
+    .container_extensions>h2 {
+        font-size: 42px;
+        margin-bottom: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 748px) {
     .container_extensions>h2 {
         font-size: 36px;
         margin-bottom: 1.75rem;
