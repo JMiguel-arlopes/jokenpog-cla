@@ -5,7 +5,7 @@ import { GiBattleAxe } from "react-icons/gi";
 
 export default function Extensions() {
     return (
-        <section className={styles.container_extensions}>
+        <section className={styles.container_extensions} id='functionalities'>
             <h2>Funcionalidades</h2>
             <Container modifier='center'>
                 <CardExtension
