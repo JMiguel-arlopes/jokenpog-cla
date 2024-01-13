@@ -75,7 +75,7 @@ export default function Ranks(prop) {
     }, [members])
     
     return (
-        <section className={styles.rank_container}>
+        <section className={styles.rank_container} id='statistics'>
             <div className={styles.rank_content}>
                 <div className={styles.container_cards}>
                     <CardSimpleStatistic
