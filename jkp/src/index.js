@@ -14,10 +14,6 @@ const router = createBrowserRouter([
         path: "/",
         element: <Mlbb />,
       },
-      // {
-      //   path: "/mlbb",
-      //   element: <Mlbb />,
-      // },
     ],
   },
 ]);
