@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
     .container_card_simple {
         margin-bottom: 2.5rem;
         width: 100%;
