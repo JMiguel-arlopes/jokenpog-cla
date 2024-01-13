@@ -1,6 +1,8 @@
 import styles from './navbar.module.css'
 import logo from '../../assets/logo.jpg'
 import { useState } from 'react'
+import { IoMenu } from "react-icons/io5";
+import { FaX } from "react-icons/fa6";
 
 export default function Navbar() {
 
@@ -17,10 +19,28 @@ export default function Navbar() {
                 <img src={logo} />
             </div>
 
-            <h2 className={`${styles.jkp} ${styles.hide}`} onClick={toggleActived}>BUTTON</h2>
+            {!actived ?
+                <IoMenu 
+                    className={styles.hide}
+                    size={56}
+                    onClick={toggleActived}
+                />
+                : <FaX 
+                    className={styles.hide}
+                    size={48}
+                    onClick={toggleActived}
+                />
+            }
+
+            <div className={`${styles.links} ${styles.show}`}>
+                <a href="/">Sobre nós</a>
+                <a href="/">Membros</a>
+                <a href="/">Estatisticas</a>
+                <a href="/">Funcionalidades</a>
+            </div>
 
             {actived && (
-                <div className={styles.links}>
+                <div className={`${styles.links} ${styles.hide}`}>
                     <a href="/">Sobre nós</a>
                     <a href="/">Membros</a>
                     <a href="/">Estatisticas</a>
