@@ -1,5 +1,4 @@
 import styles from './ranks.module.css';
-import Container from '../../components/Container'
 import { useEffect, useState } from 'react';
 import CardSimpleStatistic from '../../layout/statistic/CardSimpleStatistic';
 import CardRankStatistic from '../../layout/statistic/CardRankStatistic';
