@@ -8,7 +8,7 @@
 }
 
 .container_swipper>h2 {
-    color: var(--laranja);
+    color: black;
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
@@ -28,3 +28,9 @@
     width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    .content_slide {
+        padding: 3rem 0;
+    }
+    
+}
