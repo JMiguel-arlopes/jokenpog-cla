@@ -56,30 +56,30 @@
 .btn {
     text-decoration: none;
     color: var(--white);
-    width: 120px;
+    /* width: 120px; */
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 10px;
-    padding: .1em 1em;
-    border: 2px solid var(--purple);
-    border-bottom-right-radius: 10px;
+    padding: .15em 1.75em;
+    border: 2px solid rgb(255, 145, 0);
+    border-bottom-right-radius: 8px;
     letter-spacing: .5px;
     text-align: center;
     transition: .2s;
 }
 
 .btn:hover {
-    background-color: var(--purple);
+    background-color: rgb(255, 145, 0);
     color: var(--preto);
 }
 
 .btn:last-child {
-    background-color: var(--purple);
+    background-color: rgb(255, 145, 0);
 }
 
 .btn:last-child:hover {
-    box-shadow: 0 0 5px var(--purple);
+    box-shadow: 0 0 5px rgb(255, 145, 0);
 }
 
 .follow {
@@ -92,7 +92,7 @@
 
 .follow p {
     font-size: 12px;
-    color: var(--purple);
+    color: whitesmoke;
 }
 
 .follow svg {
@@ -100,8 +100,12 @@
     font-size: 24px;
     border-radius: 50%;
     padding: 5px;
-    background-color: var(--purple);
+    background-color: rgb(81, 81, 188);
     margin-left: 15px;
+}
+
+.follow svg:last-child {
+    background-color: red;
 }
 
 .banner_img {
@@ -129,8 +133,8 @@
     .container_banner_mlbb {
         width: 100vw;
         flex-direction: column-reverse;
-        background-color: var(--blue-bg-mobile);
-        min-height: 0;
+        background-color: var(--dark-bg-mobile);
+        min-height: 90vh;
     }
 
     .information_banner {

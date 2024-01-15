@@ -34,10 +34,10 @@
 .information_aboutus p {
     font-family: var(--fonte-secundaria);
     color: var(--white);
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 1.5;
-    padding: .5rem 0;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.3;
+    padding: .75rem 0;
 }
 
 .btnContainer {
@@ -80,16 +80,32 @@
     .container_aboutus {
         width: 100vw;
         flex-direction: column;
-        background: linear-gradient(var(--blue-bg-mobile), var(--light-blue-bg) 75%);
+        background: linear-gradient(var(--dark-bg-mobile), black 75%);
     }
 
     .information_aboutus {
+        background: linear-gradient(
+            var(--dark-bg-mobile),
+            var(--dark-orange-mobile),
+            rgb(5, 5, 5) 85%);
+
+            /* var(--dark-bg-mobile) 15%,
+            var(--dark-orange-mobile),
+            var(--dark-bg-mobile) 85%); */
+
+            /* var(--dark-orange-mobile),
+            var(--dark-bg-mobile) 25%,
+            var(--dark-bg-mobile) 95%,
+            var(--dark-bg-mobile)); */
         padding: 2rem 1rem;
         max-width: 100%;
     }
 
     .img_aboutus {
-        background: linear-gradient(var(--cor-de-fundo), var(--dark-blue-bg-mobile));
+        background: 
+            linear-gradient(
+                var(--orange-mobile),
+                var(--dark-bg-mobile) 35%);
         min-height: initial;
         padding: 1rem .75rem;
         border-left: none;

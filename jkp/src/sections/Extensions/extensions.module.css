@@ -27,7 +27,7 @@
 @media screen and (max-width: 748px) {
     .container_extensions {
         padding: 1.25rem 1rem;
-        background: linear-gradient(var(--dark-blue-bg-mobile), var(--dark-blue-bg));
+        background: linear-gradient(var(--preto), #13131a);
     }
 
     .container_extensions>h2 {

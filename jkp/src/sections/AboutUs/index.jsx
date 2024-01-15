@@ -1,9 +1,13 @@
 import styles from './aboutus.module.css'
 import SwipperHall from '../../layout/SwipperHall';
-import { FaCoins, FaPeopleGroup } from "react-icons/fa6";
-import { IoLogoGameControllerB } from "react-icons/io";
+import ContainerBall from '../../components/ContainerBall';
+import Container from '../../components/Container';
 
-export default function AboutUs({db}) {
+export default function AboutUs(props) {
+
+    const {db, amountMatches, amountMCL, amountMembers} = props
+
+
     return (
         <section className={styles.container_aboutus} id='aboutus'>
             <div className={styles.information_aboutus}>
@@ -19,9 +23,20 @@ export default function AboutUs({db}) {
                     interessados.
                 </p>
                 <div className={styles.btnContainer}>
-                    <FaCoins />
-                    <IoLogoGameControllerB/>
-                    <FaPeopleGroup/>
+                    <Container modifier='center'>
+                        <ContainerBall 
+                            data={amountMatches}
+                            phrase={'Partidas dos membros'}
+                        />
+                        <ContainerBall 
+                            data={amountMembers}
+                            phrase={'membros da jokenpog'}
+                        />
+                        <ContainerBall 
+                            data={amountMCL}
+                            phrase={"MCL's totais"}
+                        />
+                    </Container>
                 </div> 
             </div>
             <div className={styles.img_aboutus} id='members'>

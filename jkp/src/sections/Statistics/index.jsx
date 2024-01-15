@@ -2,33 +2,35 @@ import styles from './ranks.module.css';
 import { useEffect, useState } from 'react';
 import CardSimpleStatistic from '../../layout/statistic/CardSimpleStatistic';
 import CardRankStatistic from '../../layout/statistic/CardRankStatistic';
+import InformationBase from '../../components/informationBase';
 
 export default function Ranks(prop) {
 
     const {db} = prop;
     const members = db.members;
-    const allLanesPlayers = members.map(player => player.lane)
-
+    
     const [averageWR, setAverageWR] = useState(0)
+    const [averageMCL, setAverageMCL] = useState(0)
     const [totalMatches, setTotalMatches] = useState(0)
     const [totalTitle, setTotalTitles] = useState(0)
     const [rankLane, setRankLane] = useState([])
     const [rankMedal, setRankMedal] = useState([])
-
-    const calculateAverageWinRate = () => {
-        
-        const total = members.reduce((total, itemAtual) => total + itemAtual.winRate, 0)
-
-        const media = (total / members.length).toFixed(2)
-        setAverageWR(media)
-    }
+    const [rankElo, setRankELo] = useState([])
 
     const sumValues = (key) => {
-        const result = members.reduce((acc, item) => acc + item[key], 0)
+        const result = members.reduce((total, item) => total + item[key], 0)
         return result
     }
+    
+    const calculateAverage = (key) => {
+        const total = sumValues(key)
 
-    const calculateMostUsedItemInArray = (arrayToCount) => {
+        const media = (total / members.length).toFixed(2)
+        return media
+    }
+
+    const calculateMostUsedItemInArray = (key) => {
+        const arrayToCount = members.map(member => member[key])
         const contagem = {}
         
         // aqui nós vamos pegar as lanes de todos no banco de dados
@@ -66,36 +68,70 @@ export default function Ranks(prop) {
     }
 
     useEffect(() => {
-        setRankLane(calculateMostUsedItemInArray(allLanesPlayers))
-        setRankMedal(sortPlayersBy('medal'))
-        setTotalMatches(sumValues('matches'))
-        setTotalTitles(sumValues('titles'))
-        
-        calculateAverageWinRate()
+        setRankLane(calculateMostUsedItemInArray('lane'));
+        setRankELo(calculateMostUsedItemInArray('elo'));
+        setRankMedal(sortPlayersBy('medal'));
+        setTotalMatches(sumValues('matches'));
+        setTotalTitles(sumValues('titles'));
+        setAverageWR(calculateAverage('winRate'));
+        setAverageMCL(calculateAverage('mcl'));
     }, [members])
     
     return (
         <section className={styles.rank_container} id='statistics'>
             <div className={styles.rank_content}>
                 <div className={styles.container_cards}>
-                    <CardSimpleStatistic
-                        title='Partidas totais'
-                        value={totalMatches}
-                        suffix=' Partidas'
+                    <h2>Sobre nós</h2>
+                    <InformationBase 
+                        data={totalMatches} 
+                        message='Partidas totais'
                     />
-                    <CardSimpleStatistic
-                        title='Win Rate Geral'
-                        value={averageWR}
+                    <InformationBase 
+                        data={averageWR}
                         suffix='%'
+                        message='win rate (média geral)'
                     />
-                    <CardSimpleStatistic
-                        title='Titulos Nacionais'
-                        value={totalTitle}
-                        suffix=' Titulos'
+                    <InformationBase 
+                        data={totalTitle}
+                        message='Titulos Nacionais'
                     />
+                    <InformationBase 
+                        data= {averageMCL}
+                        message="MCL's por membro"
+                    />
+                    <InformationBase 
+                        data= {
+                            rankLane.length > 0 
+                            ? rankLane[0].name 
+                            : ''
+                        }
+                        message='rota mais visitada pelos Membros'
+                    />
+                    <InformationBase 
+                        data= {
+                            rankElo.length > 0 
+                            ? rankElo[0].name 
+                            : ''
+                        }
+                        message='patente majoritária'
+                    />
+
                 </div>
                 <div className={styles.container_cards}>
-                    <CardRankStatistic
+                    <div className={styles.container_rank}>
+                        {rankLane.map((lane, index) => {
+                            return (
+                                <div className={styles.row}>
+                                    <span>{index+1}°</span>
+                                    <div>
+                                        <h2>{lane.name}</h2>
+                                        <h3>{lane.value}</h3>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    {/* <CardRankStatistic
                         rank={rankLane}
                         title={'Mains por Lane'}
                         name='Players'
@@ -104,7 +140,7 @@ export default function Ranks(prop) {
                         rank={rankMedal}
                         title={'Campeões JKP'}
                         name='Medalhas'
-                    />
+                    /> */}
                 </div>
             </div>
         </section>

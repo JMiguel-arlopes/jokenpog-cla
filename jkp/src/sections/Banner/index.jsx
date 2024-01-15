@@ -22,7 +22,7 @@ export default function Banner_mlbb() {
                         investimento e economia.
                     </p>
                     <Container modifier='start'>
-                        <a href='/' className={styles.btn}>Get in</a>
+                        {/* <a href='/' className={styles.btn}>Get in</a> */}
                         <a href='/' className={styles.btn}>Start</a>
                     </Container>
                 </div>
