@@ -1,0 +1,21 @@
+.information_container {
+    text-align: left;
+    color: var(--white);
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.information_container h3 {
+    color: var(--laranja);
+    line-height: 1;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.information_container h4 {
+    line-height: 1;
+    /* text-transform: lowercase; */
+    font-size: 18px;
+    font-weight: 600;
+}
