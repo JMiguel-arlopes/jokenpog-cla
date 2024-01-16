@@ -3,10 +3,12 @@
 @import url('https://fonts.cdnfonts.com/css/buchanan');
 @import url('https://fonts.cdnfonts.com/css/knight-warrior');
 @import url('https://fonts.cdnfonts.com/css/zombie-brush-personal-use');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 :root {
   --fonte-principal: 'Black Ops One', cursive;
   --fonte-secundaria: 'Poppins', sans-serif;
+  --fonte-terciaria: 'Helvetica Neue', sans-serif;
   --statistic-font: 'Buchanan', sans-serif;
   --header-card-font: 'KNIGHT WARRIOR', sans-serif;
   --brush-font: 'Zombie Brush Personal Use', sans-serif;
@@ -15,11 +17,9 @@
   --bg: #010103;
   --dark-blue-bg: rgb(21, 13, 59);
   --blue-bg: rgb(36, 23, 103);
-
   --light-blue-bg: rgb(44, 44, 199);
   --dark-blue-bg-mobile: rgb(36, 21, 104);
   --dark-bg-mobile: #13131a;
-
   /* --dark-blue-bg-mobile: rgb(29, 18, 80); */
   --blue-bg-mobile: rgb(48, 26, 153);
   --border: .125rem solid #777;
