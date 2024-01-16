@@ -1,5 +1,5 @@
 import styles from './swipper.module.css';
-import CardPlayer from '../users/CardPlayer';
+import CardPlayer from '../CardPlayer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, Grid, EffectCreative } from 'swiper/modules';
 import 'swiper/css';
