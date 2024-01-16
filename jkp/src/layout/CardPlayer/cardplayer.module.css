@@ -1,0 +1,87 @@
+.card {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    text-align: start;
+    flex-wrap: wrap;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: move-it 5s linear infinite;
+    margin: .5rem 0;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.card.exp {
+    background: repeating-linear-gradient(45deg,
+        #440000,
+        #aa0000 4%,
+        #ff0000 4%,
+        #080808 5%);
+    box-shadow: 
+        0 0 6px red,
+        0 0 5px #FFF;
+}
+
+.card.mid {
+    background: repeating-linear-gradient(45deg,
+        #000044,
+        #0000aa 4%,
+        #0000ff 4%,
+        #080808 5%);
+    box-shadow: 
+        0 0 6px blue,
+        0 0 5px #FFF;
+}
+
+.card.gold {
+    background: repeating-linear-gradient(45deg,
+        rgb(75, 75, 0),
+        rgb(193, 179, 0) 4%,
+        goldenrod 4%,
+        #0e0c00 5%);
+    box-shadow: 
+        0 0 6px gold,
+        0 0 5px #FFF;
+}
+
+.card.roaming {
+    background: repeating-linear-gradient(45deg,
+        #6e3700,
+        #ce8032 4%,
+        #ff9b38 4%,
+        #080808 5%);
+    box-shadow: 
+        0 0 6px #ff9b38,
+        0 0 5px #FFF;
+}
+
+.card.jungle {
+    background: repeating-linear-gradient(45deg,
+        #004400,
+        #00bf00 4%,
+        #00ff00 4%,
+        #080808 5%);
+    box-shadow: 
+        0 0 6px #00ff00,
+        0 0 5px #FFF;
+}
+
+
+@keyframes move-it {
+    0% {
+        background-position: initial;
+    }
+
+    100% {
+        background-position: 200px 0px;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .card {
+        max-width: 400px;
+        width: 100%;
+    }
+}
