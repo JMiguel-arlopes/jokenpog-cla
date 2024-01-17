@@ -1,11 +1,11 @@
 import styles from './ranks.module.css';
 import InformationBase from '../../components/informationBase';
-import img from '../../assets/emblem/exp.png'
 import CardRanking from '../../layout/statistic/CardRanking';
 
 export default function Ranks(props) {
 
     const {amountMatches, amountTitles, averageWR, averageMCL, rankingLane, rankingElo, rankingMedal} = props
+
     return (
         <section className={styles.rank_container} id='statistics'>
             <div className={styles.rank_content}>
@@ -47,9 +47,9 @@ export default function Ranks(props) {
                 </div>
             </div>
             <div className={styles.ranking}>
-                <CardRanking data={rankingLane} suffix=' membros'/>
-                <CardRanking data={rankingElo} suffix=' membros' isEven='true'/>
-                <CardRanking data={rankingMedal} suffix=' medalha'/>
+                <CardRanking data={rankingLane} suffix=' membros' title="Lane principal / membro"/>
+                <CardRanking data={rankingElo} suffix=' membros' isEven='true' title="Patentes mais conquistadas"/>
+                <CardRanking data={rankingMedal} suffix=' medalha' title="Campeões JKP"/>
             </div>
         </section>
     )
