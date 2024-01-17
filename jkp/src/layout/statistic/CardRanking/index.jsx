@@ -1,12 +1,15 @@
 import styles from './cardranking.module.css';
 import LineRanking from '../../../components/LineRanking';
-
+import img from '../../../assets/ranking/rank.png'
 export default function CardRanking(props) {
-    const {data, suffix, isEven} = props;
-    
+    const {data, title, suffix, isEven} = props;
+
     return (
         <div className={styles.container_rank}>
-            <h2>Especialidade de lane</h2>
+            <div className={styles.header}>
+                <img src={img} alt="bandeira"/>
+                <h2>{title}</h2>
+            </div>
             {data.map((item, index) => {
                 return (
                     <LineRanking
@@ -15,6 +18,7 @@ export default function CardRanking(props) {
                         value={item.value}
                         index={index}
                         suffix={suffix}
+                        data-content={item.name}
                     />
                 )
             })}

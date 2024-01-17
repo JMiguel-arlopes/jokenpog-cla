@@ -1,26 +1,38 @@
 .container_rank {
     width: 100%;
     border-bottom: 6px black solid;
-    /* background-image: url(../../../assets/download\ \(1\).gif); */
-    background: linear-gradient(#fe0902, #a40401, #770201);
+    /* background: linear-gradient(#000000, #00000c, #0c0000);; */
+    /* background: linear-gradient( #175f0f,#1f7f15, #2c7e20, #1f7f15); */
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .75), #000000), url(../../../assets/bg/Still\ on.gif);
+    background-size: cover;
+    background-position: center;
 }
 
 .container_rank:nth-of-type(even) {
     /* background-color: #99c9bd; */
-    background: linear-gradient(#1c3150, #245093);
+    background: linear-gradient(#000010, #1c3150, #245093);
 }
 
-.container_rank>h2 {
+.header {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header>h2 {
     font-family: var(--statistic-font);
-    background: linear-gradient(var(--white), var(--laranja));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
+    text-shadow: -1px 1px var(--orange-mobile);
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     font-size: 28px;
-    padding: 1rem 0;
-    margin-left: .5rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.header>img{
+    width: 15px;
 }
